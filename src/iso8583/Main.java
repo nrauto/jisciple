@@ -26,10 +26,10 @@ public class Main {
 		//byte[] dump = Util.asciiToBytes(testeCredibacon.getBytes());
 		
 		try {
-			old = OldConfigReader.readIsoConfig("config/isoNASH.yml");
+			old = OldConfigReader.readIsoConfig("config/iso2.yml");
 			config = IsoConfigConverter.convert(old);
 			
-			SizeHeaderConfig sizeHeader = SizeHeaderConfigReader.readConfig("config/sizeNASH.yml");
+			SizeHeaderConfig sizeHeader = SizeHeaderConfigReader.readConfig("config/size2.yml");
 						
 			MensagemIso msg = MensagemIsoParser.parseIso(dump, config, sizeHeader);
 			
