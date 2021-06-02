@@ -118,7 +118,10 @@ public class MensagemIso {
 	public String prettyPrint() {
 		StringBuilder sb = new StringBuilder();
 
-		sb.append(String.format("%12.12s: [%s]\n", "HEADER", getReadableString(header)));
+		String printableHeader = getReadableString(header);
+		if(printableHeader != null) {
+			sb.append(String.format("%12.12s: [%s]\n", "HEADER", printableHeader));
+		}
 		sb.append(String.format("%12.12s: [%s]\n", "MTI", getReadableString(mti)));
 		
 		for(int i = 1; i < 128; i++) {
@@ -126,12 +129,19 @@ public class MensagemIso {
 				sb.append(String.format("%6d (%3d): [%s]\n", (i+1), dados[i].getValor().length, getReadableString(dados[i])));
 			}
 		}
-		sb.append(String.format("%12.12s: [%s]\n", "FOOTER", getReadableString(footer)));
+		
+		String printableFooter = getReadableString(footer);
+		if(printableFooter != null) {
+			sb.append(String.format("%12.12s: [%s]\n", "FOOTER", getReadableString(footer)));
+		}
+		
 		return sb.toString();
 	}
 	
 	private String getReadableString(Bit b) {
-		
+		if(b == null || b.getValor() == null) {
+			return null;
+		}
 		if(b.getTipoFormato() == TipoFormatoEnum.ASCII) {
 			return new String(b.getValor());
 		} else {

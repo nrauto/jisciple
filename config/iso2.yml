@@ -11,7 +11,7 @@ iso:
   bits:
     '002':
       tipo-tamanho: LLBCD
-      tipo-contagem: BYTE
+      tipo-contagem: NIBBLES
       tamanho: 99
       tipo-dados: NUMERICO
       formato-dados: BCD
@@ -209,7 +209,7 @@ iso:
       formato-dados: ASCII
     '035':
       tipo-tamanho: LLBCD
-      tipo-contagem: BYTE
+      tipo-contagem: NIBBLE
       tamanho: 99
       tipo-dados: ALFANUMESPECIAL
       formato-dados: BCD

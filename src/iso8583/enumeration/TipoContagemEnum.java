@@ -8,7 +8,11 @@ public enum TipoContagemEnum {
 		try {
 			return TipoContagemEnum.valueOf(input);
 		} catch (IllegalArgumentException e) {
-			return BYTES;
+			if(input.toUpperCase().contains("NIBBLE")) {
+				return NIBBLES;
+			} else {
+				return BYTES;
+			}
 		}
 	}
 }

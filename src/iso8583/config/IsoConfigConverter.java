@@ -2,9 +2,7 @@ package iso8583.config;
 
 import static iso8583.enumeration.TipoContagemEnum.BYTES;
 import static iso8583.enumeration.TipoDadoEnum.ALFANUMERICO;
-import static iso8583.enumeration.TipoDadoEnum.NUMERICO;
 import static iso8583.enumeration.TipoTamanhoEnum.FIXO;
-
 
 import iso8583.config.old.OldBitConfig;
 import iso8583.config.old.OldIsoConfig;

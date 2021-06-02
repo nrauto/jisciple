@@ -79,13 +79,13 @@ public class MensagemIsoParser {
 		}
 		
 		for(int i = 0; i < bitsParaLer.length; i++) {
-			System.out.print(" parseando bit " + (bitsParaLer[i]+1) );
+			//System.out.print(" parseando bit " + (bitsParaLer[i]+1) );
 			Bit b = new Bit(config.getBitConfig()[bitsParaLer[i]]);
 			numBytesLidos = parseBit(input, b);
 			input = Arrays.copyOfRange(input, numBytesLidos, input.length);
 			msg.getDados()[bitsParaLer[i]] = b;
 
-			System.out.println(" ->  " + Util.toPrintableString(b.getValor()) );
+			//System.out.println(" ->  " + Util.toPrintableString(b.getValor()) );
 			
 		}
 		
@@ -122,13 +122,11 @@ public class MensagemIsoParser {
 		case LLBCD:
 			lengthBytes = Arrays.copyOf(input, 1);
 			lengthInt =  Util.bcdToInt(lengthBytes);
-			lengthInt = lengthInt/2 + lengthInt%2;
 			break;
 			
 		case LLLBCD:
 			lengthBytes = Arrays.copyOf(input, 2);
 			lengthInt =  Util.bcdToInt(lengthBytes);
-			lengthInt = lengthInt/2 + lengthInt%2;
 			break;
 			
 		case LLVAR:
@@ -145,9 +143,10 @@ public class MensagemIsoParser {
 		}
 		
 		int bytesParaLer = lengthInt;
-		if(bit.getTipoContagem() == TipoContagemEnum.NIBBLES) { // TODO verificar se isso funciona
+		if(bit.getTipoContagem() == TipoContagemEnum.NIBBLES) { 
 			bytesParaLer = lengthInt/2 + lengthInt%2;
 		}
+		//System.out.print(String.format("[%d -> %d]", lengthInt, bytesParaLer));
 		
 		byte[] dado = new byte[bytesParaLer];
 		System.arraycopy(input, lengthBytes.length, dado, 0, bytesParaLer);

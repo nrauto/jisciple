@@ -39,6 +39,7 @@ public class Main {
 			
 			System.out.println(new String(msg.toByteArray()));
 			
+			msg.check();
 			
 		} catch (IOException e) {
 			e.printStackTrace();
