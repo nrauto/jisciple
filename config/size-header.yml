@@ -1,0 +1,5 @@
+size-header:
+  tipo: BINARIO
+  tamanho: 2
+  formato: HL
+  inclui-proprio-tamanho: true

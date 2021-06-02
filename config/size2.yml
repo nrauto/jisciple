@@ -1,0 +1,5 @@
+size-header:
+  tipo: ASCII
+  tamanho: 4
+  formato: HL
+  inclui-proprio-tamanho: false

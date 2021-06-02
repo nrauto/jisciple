@@ -1,0 +1,773 @@
+iso:
+  mti: BCD
+  mapa-bits: BINARIO
+  header: ASCII
+  header-tx: 0 
+  header-rx: 0
+  footer: ASCII
+  footer-tx: 0
+  footer-rx: 0
+  bits-sensiveis: [2, 14, 35, 45, 52, 55, 63]
+  bits:
+    '002':
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 99
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '003':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: ALFANUMERICO
+      formato-dados: BCD
+    '004':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 6
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '005': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '006': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '007':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 5
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '008': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '009': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '010': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: NUMERICO
+      formato-dados: ASCII 
+    '011':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '012':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '013':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '014':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '015': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '016': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '017': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '018':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '019': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '020': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '021': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '022':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '023':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '024': 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '025':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '026': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '027': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '028':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '029': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '030': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '031':
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 99
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '032':
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 99
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '033': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 11
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '034': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 28
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '035':
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 99
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: BCD
+    '036': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 104
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '037':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '038':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 6
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '039':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '040': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '041':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '042': 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 15
+      tipo-dados: ALFANUMESPECIAL 
+      formato-dados: ASCII
+    '043':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 107
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '044':
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '045':
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 99
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '046': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '047': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '048':
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '049':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '050': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '051': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '052':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: ALFANUMERICO
+      formato-dados: BINARIO
+    '053': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '054': 
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '055': 
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: BINARIO
+    '056': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '057': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '058': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '059': 
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 99
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '060':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '061': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '062':
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '063':
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMERICO
+      formato-dados: BINARIO
+    '064':  # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 64
+      tipo-dados: ALFANUMERICO
+      formato-dados: BINARIO
+    '065': # Nao ha na especificacao Nashville, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: BINARIO
+    '066': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '067': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '068': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '069': # Nao ha na especificacao Nashville, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '070':
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 99
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '071': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '072': # Nao ha na especificacao Nashville, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '073': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 6
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '074': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '075': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '076': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '077': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '078': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '079': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '080': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '081': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '082': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '083': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '084': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '085': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '086': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '087': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '088': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '089': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '090': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 42
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '091': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '092': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '093':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 5
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '094': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 7
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '095': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 42
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '096':
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 99
+      tipo-dados: ALFANUMERICO
+      formato-dados: BINARIO
+    '097': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 17
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '098': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 25
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '099': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 11
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '100':
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 99
+      tipo-dados: NUMERICO
+      formato-dados: BCD
+    '101': # Nao ha na especificacao Nashville, utilizado da ISO 
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 17
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '102': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 28
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '103': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLBCD
+      tipo-contagem: BYTE
+      tamanho: 28
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '104': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 100
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '105': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '106': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '107': # Nao ha na especificacao Nashville, utilizado da ISO 
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '108': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '109': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '110': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '111': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '112': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: BINARIO
+    '113': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: BINARIO
+    '114': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '115': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '116': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '117': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '118': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '119': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '120': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '121': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '122': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '123': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '124': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '125': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '126': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '127': # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: LLLBCD
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '128':  # Nao ha na especificacao Nashville, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 64
+      tipo-dados: ALFANUMERICO
+      formato-dados: BINARIO

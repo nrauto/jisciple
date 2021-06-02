@@ -1,0 +1,773 @@
+iso:
+  mti: ASCII
+  mapa-bits: ASCII
+  header: ASCII
+  header-tx: 12 
+  header-rx: 12
+  footer: ASCII
+  footer-tx: 1
+  footer-rx: 1
+  bits-sensiveis: [2, 14, 35, 45, 52, 63]
+  bits:
+    '002':
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 19
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '003':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 6
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '004':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '005':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '006':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '007':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '008':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '009':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '010':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: NUMERICO
+      formato-dados: ASCII 
+    '011':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 6
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '012':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 6
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '013':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '014':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '015':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '016': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '017':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '018':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '019': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '020': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '021': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '022':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '023': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '024': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '025':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '026': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '027':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '028': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '029': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '030': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '031': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '032':
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 11
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '033':
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 11
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '034': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 28
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '035':
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 37
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '036': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 104
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '037':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '038':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 6
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '039':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '040': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '041':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '042': 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 15
+      tipo-dados: ALFANUMESPECIAL 
+      formato-dados: ASCII
+    '043':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 40
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '044':
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 25
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '045':
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 76
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '046': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '047': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '048':
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 27
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '049':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '050':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '051':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '052':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '053':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '054': 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 42
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '055': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '056': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '057': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '058': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 8
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '059': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '060':
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '061':
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 19
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '062':
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '063':
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 597
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '064': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '065': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '066': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '067': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '068': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '069': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '070':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 3
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '071': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '072': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 4
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '073': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 6
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '074':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '075':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '076':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '077':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '078':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '079': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '080':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '081':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 10
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '082': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '083': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '084': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '085': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 12
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '086':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '087':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '088':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '089':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '090':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 42
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '091': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 1
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '092': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 2
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '093': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 5
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '094': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 7
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '095':
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 42
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '096': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 64
+      tipo-dados: ALFANUMERICO
+      formato-dados: BINARIO
+    '097': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 17
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '098': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 25
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '099': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 11
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '100': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 11
+      tipo-dados: NUMERICO
+      formato-dados: ASCII
+    '101': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 17
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '102':
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 28
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '103':
+      tipo-tamanho: LLVAR
+      tipo-contagem: BYTE
+      tamanho: 28
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '104': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 100
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '105': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '106': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '107': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '108': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '109': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '110': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '111': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '112': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: BINARIO
+    '113': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: BINARIO
+    '114': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '115': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '116': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '117': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '118': # Nao ha na especificacao Posnet, utilizado da ISO 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '119': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '120':
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 29
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '121': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '122': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '123':
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 553
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '124': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '125': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 999
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '126': 
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 38
+      tipo-dados: ALFANUMESPECIAL
+      formato-dados: ASCII
+    '127': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: LLLVAR
+      tipo-contagem: BYTE
+      tamanho: 9
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
+    '128': # Nao ha na especificacao Posnet, utilizado da ISO
+      tipo-tamanho: FIXO
+      tipo-contagem: BYTE
+      tamanho: 16
+      tipo-dados: ALFANUMERICO
+      formato-dados: ASCII
