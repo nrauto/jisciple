@@ -1,15 +1,15 @@
-package iso8583;
+package jisciple;
 
 import java.io.IOException;
 
-import iso8583.config.IsoConfigConverter;
-import iso8583.config.MensagemIsoConfig;
-import iso8583.config.old.OldIsoConfig;
-import iso8583.config.old.OldIsoConfigStructure;
-import iso8583.config.sizeheader.SizeHeaderConfig;
-import iso8583.config.sizeheader.TcpConfig;
-import iso8583.util.Util;
-import iso8583.util.YamlReader;
+import jisciple.iso8583.config.IsoConfigConverter;
+import jisciple.iso8583.config.MensagemIsoConfig;
+import jisciple.iso8583.config.iso.OldIsoConfig;
+import jisciple.iso8583.config.iso.OldIsoConfigStructure;
+import jisciple.iso8583.config.sizeheader.SizeHeaderConfig;
+import jisciple.iso8583.config.sizeheader.TcpConfig;
+import jisciple.iso8583.util.Util;
+import jisciple.iso8583.util.YamlReader;
 
 public class Main {
 
@@ -39,7 +39,7 @@ public class Main {
 			System.out.println(msg.prettyPrint());
 			System.out.println("\n\n\n");
 			
-			System.out.println(new String(msg.toByteArray()));
+			//System.out.println(new String(msg.toByteArray()));
 			
 			msg.check();
 			

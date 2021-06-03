@@ -1,12 +1,12 @@
-package iso8583;
+package jisciple;
 
 import java.util.Arrays;
 
-import iso8583.config.MensagemIsoConfig;
-import iso8583.config.sizeheader.SizeHeaderConfig;
-import iso8583.enumeration.TipoContagemEnum;
-import iso8583.enumeration.TipoFormatoEnum;
-import iso8583.util.Util;
+import jisciple.iso8583.config.MensagemIsoConfig;
+import jisciple.iso8583.config.sizeheader.SizeHeaderConfig;
+import jisciple.iso8583.enumeration.TipoContagemEnum;
+import jisciple.iso8583.enumeration.TipoFormatoEnum;
+import jisciple.iso8583.util.Util;
 
 public class MensagemIsoParser {
 

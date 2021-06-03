@@ -1,4 +1,4 @@
-package iso8583.config.sizeheader;
+package jisciple.iso8583.config.sizeheader;
 
 import lombok.Data;
 

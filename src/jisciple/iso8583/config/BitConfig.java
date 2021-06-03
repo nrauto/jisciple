@@ -1,11 +1,11 @@
-package iso8583.config;
+package jisciple.iso8583.config;
 
 import java.io.Serializable;
 
-import iso8583.enumeration.TipoContagemEnum;
-import iso8583.enumeration.TipoFormatoEnum;
-import iso8583.enumeration.TipoTamanhoEnum;
-import iso8583.enumeration.TipoDadoEnum;
+import jisciple.iso8583.enumeration.TipoContagemEnum;
+import jisciple.iso8583.enumeration.TipoDadoEnum;
+import jisciple.iso8583.enumeration.TipoFormatoEnum;
+import jisciple.iso8583.enumeration.TipoTamanhoEnum;
 import lombok.Data;
 
 @Data

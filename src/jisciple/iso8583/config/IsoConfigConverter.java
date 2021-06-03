@@ -1,15 +1,15 @@
-package iso8583.config;
+package jisciple.iso8583.config;
 
-import static iso8583.enumeration.TipoContagemEnum.BYTES;
-import static iso8583.enumeration.TipoDadoEnum.ALFANUMERICO;
-import static iso8583.enumeration.TipoTamanhoEnum.FIXO;
+import static jisciple.iso8583.enumeration.TipoContagemEnum.BYTES;
+import static jisciple.iso8583.enumeration.TipoDadoEnum.ALFANUMERICO;
+import static jisciple.iso8583.enumeration.TipoTamanhoEnum.FIXO;
 
-import iso8583.config.old.OldBitConfig;
-import iso8583.config.old.OldIsoConfig;
-import iso8583.enumeration.TipoContagemEnum;
-import iso8583.enumeration.TipoDadoEnum;
-import iso8583.enumeration.TipoFormatoEnum;
-import iso8583.enumeration.TipoTamanhoEnum;
+import jisciple.iso8583.config.iso.OldBitConfig;
+import jisciple.iso8583.config.iso.OldIsoConfig;
+import jisciple.iso8583.enumeration.TipoContagemEnum;
+import jisciple.iso8583.enumeration.TipoDadoEnum;
+import jisciple.iso8583.enumeration.TipoFormatoEnum;
+import jisciple.iso8583.enumeration.TipoTamanhoEnum;
 
 public class IsoConfigConverter {
 

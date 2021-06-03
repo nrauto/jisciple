@@ -1,12 +1,12 @@
-package iso8583;
+package jisciple;
 
 import java.util.Arrays;
 
-import iso8583.config.BitConfig;
-import iso8583.enumeration.TipoContagemEnum;
-import iso8583.enumeration.TipoFormatoEnum;
-import iso8583.enumeration.TipoTamanhoEnum;
-import iso8583.util.Util;
+import jisciple.iso8583.config.BitConfig;
+import jisciple.iso8583.enumeration.TipoContagemEnum;
+import jisciple.iso8583.enumeration.TipoFormatoEnum;
+import jisciple.iso8583.enumeration.TipoTamanhoEnum;
+import jisciple.iso8583.util.Util;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

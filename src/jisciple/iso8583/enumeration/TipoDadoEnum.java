@@ -1,4 +1,4 @@
-package iso8583.enumeration;
+package jisciple.iso8583.enumeration;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

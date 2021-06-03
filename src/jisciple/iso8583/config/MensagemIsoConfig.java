@@ -1,4 +1,4 @@
-package iso8583.config;
+package jisciple.iso8583.config;
 
 import lombok.Data;
 

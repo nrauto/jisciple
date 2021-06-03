@@ -1,12 +1,12 @@
-package iso8583;
+package jisciple;
 
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import iso8583.config.MensagemIsoConfig;
-import iso8583.config.sizeheader.SizeHeaderConfig;
-import iso8583.enumeration.TipoFormatoEnum;
-import iso8583.util.Util;
+import jisciple.iso8583.config.MensagemIsoConfig;
+import jisciple.iso8583.config.sizeheader.SizeHeaderConfig;
+import jisciple.iso8583.enumeration.TipoFormatoEnum;
+import jisciple.iso8583.util.Util;
 import lombok.Data;
 
 @Data
@@ -130,7 +130,7 @@ public class MensagemIso {
 				sb.append(String.format("%6d (%3d): [%s]\n", (i+1), dados[i].getValor().length, getReadableString(dados[i])));
 			}
 		}
-		
+		// TODO quebrar TLVs e tags EMV
 		String printableFooter = getReadableString(footer);
 		if(printableFooter != null) {
 			sb.append(String.format("%12.12s: [%s]\n", "FOOTER", getReadableString(footer)));

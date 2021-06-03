@@ -1,4 +1,4 @@
-package iso8583.enumeration;
+package jisciple.iso8583.enumeration;
 
 public enum TipoTamanhoEnum {
 	FIXO, LLVAR, LLLVAR, LLBCD, LLLBCD

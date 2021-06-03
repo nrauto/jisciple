@@ -1,4 +1,4 @@
-package iso8583.config.old;
+package jisciple.iso8583.config.iso;
 
 import java.io.Serializable;
 

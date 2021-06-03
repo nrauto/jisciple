@@ -1,4 +1,4 @@
-package iso8583.util;
+package jisciple.iso8583.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;

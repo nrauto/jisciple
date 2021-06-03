@@ -1,4 +1,4 @@
-package iso8583.util;
+package jisciple.iso8583.util;
 
 import java.util.Arrays;
 import java.util.regex.Pattern;
