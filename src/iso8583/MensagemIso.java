@@ -96,15 +96,15 @@ public class MensagemIso {
 		
 		// HEADER TCP (no começo da msg)
 		byte[] tcpHeader; 
-		if(sizeHeader.getFormato().equalsIgnoreCase("ASCII")) { 
+		if(sizeHeader.getTipo().equalsIgnoreCase("ASCII")) { 
 			String headerStr = String.format("%0" + sizeHeader.getTamanho() + "d", length);
-			if(sizeHeader.getTipo().equalsIgnoreCase("LH")) {
+			if(sizeHeader.getFormato().equalsIgnoreCase("LH")) {
 				headerStr = headerStr.substring(sizeHeader.getTamanho()/2) + headerStr.substring(0, sizeHeader.getTamanho()/2);
 			}
 			tcpHeader = headerStr.getBytes();
 		} else { // BINARIO
 			String headerStr = String.format("%0" + sizeHeader.getTamanho() + "X", length);
-			if(sizeHeader.getTipo().equalsIgnoreCase("LH")) {
+			if(sizeHeader.getFormato().equalsIgnoreCase("LH")) {
 				headerStr = headerStr.substring(sizeHeader.getTamanho()/2) + headerStr.substring(0, sizeHeader.getTamanho()/2);
 			} 
 			tcpHeader = Util.asciiToBytes(headerStr.getBytes());
