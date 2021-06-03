@@ -11,7 +11,7 @@ iso:
   bits:
     '002':
       tipo-tamanho: LLBCD
-      tipo-contagem: NIBBLES
+      tipo-contagem: NIBBLE
       tamanho: 99
       tipo-dados: NUMERICO
       formato-dados: BCD

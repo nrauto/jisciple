@@ -6,6 +6,7 @@ import java.util.Arrays;
 import iso8583.config.MensagemIsoConfig;
 import iso8583.config.sizeheader.SizeHeaderConfig;
 import iso8583.enumeration.TipoFormatoEnum;
+import iso8583.util.Util;
 import lombok.Data;
 
 @Data

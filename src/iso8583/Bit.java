@@ -6,6 +6,7 @@ import iso8583.config.BitConfig;
 import iso8583.enumeration.TipoContagemEnum;
 import iso8583.enumeration.TipoFormatoEnum;
 import iso8583.enumeration.TipoTamanhoEnum;
+import iso8583.util.Util;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

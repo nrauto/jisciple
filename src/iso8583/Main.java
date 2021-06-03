@@ -4,10 +4,12 @@ import java.io.IOException;
 
 import iso8583.config.IsoConfigConverter;
 import iso8583.config.MensagemIsoConfig;
-import iso8583.config.old.OldConfigReader;
 import iso8583.config.old.OldIsoConfig;
+import iso8583.config.old.OldIsoConfigStructure;
 import iso8583.config.sizeheader.SizeHeaderConfig;
-import iso8583.config.sizeheader.SizeHeaderConfigReader;
+import iso8583.config.sizeheader.TcpConfig;
+import iso8583.util.Util;
+import iso8583.util.YamlReader;
 
 public class Main {
 
@@ -26,10 +28,10 @@ public class Main {
 		//byte[] dump = Util.asciiToBytes(teste1.getBytes());
 		
 		try {
-			old = OldConfigReader.readIsoConfig("config/iso2.yml");
+			old = YamlReader.readConfig("config/iso2.yml", OldIsoConfigStructure.class).getIso();
 			config = IsoConfigConverter.convert(old);
 			
-			SizeHeaderConfig sizeHeader = SizeHeaderConfigReader.readConfig("config/size2.yml");
+			SizeHeaderConfig sizeHeader = YamlReader.readConfig("config/size2.yml", TcpConfig.class).getSizeHeader();
 						
 			MensagemIso msg = MensagemIsoParser.parseIso(dump, config, sizeHeader);
 			

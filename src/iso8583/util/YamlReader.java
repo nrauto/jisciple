@@ -1,4 +1,4 @@
-package iso8583.config.sizeheader;
+package iso8583.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -8,14 +8,12 @@ import org.yaml.snakeyaml.constructor.Constructor;
 import org.yaml.snakeyaml.introspector.Property;
 import org.yaml.snakeyaml.introspector.PropertyUtils;
 
-import iso8583.Util;
+public class YamlReader {
 
-public class SizeHeaderConfigReader {
-	
-	public static SizeHeaderConfig readConfig(String filename) throws IOException {
+	public static <T> T readConfig(String filename, Class<T> clazz) throws IOException {
 
 		// Gambi pra ler properties em snake case
-		Constructor c = new Constructor(TcpConfig.class);
+		Constructor c = new Constructor(clazz);
 		c.setPropertyUtils(new PropertyUtils() {
 			@Override
 			public Property getProperty(Class<? extends Object> type, String name) {
@@ -26,9 +24,8 @@ public class SizeHeaderConfigReader {
 
 		Yaml y = new Yaml(c);
 		FileInputStream fis = new FileInputStream(filename);
-		TcpConfig structure = y.load(fis);
+		return y.load(fis);
 		
-		return structure.getSizeHeader();
 	}
 	
 }
