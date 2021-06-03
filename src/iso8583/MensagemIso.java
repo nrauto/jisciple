@@ -154,16 +154,17 @@ public class MensagemIso {
 		Bit bitmap1calc = computeBitmap1();
 		
 		if(Arrays.compare(bitmap1calc.getValor(), bitmap1.getValor()) != 0) {
-			System.out.println("Bitmap 1 diferente: calculado [" + getReadableString(bitmap1calc) + "], atual [" + getReadableString(bitmap1) + "]");
+			// TODO lancar exception no lugar desse print
+			System.err.println("Bitmap 1 diferente: calculado [" + getReadableString(bitmap1calc) + "], atual [" + getReadableString(bitmap1) + "]");
 		}
 		
 		if(bitmap1.useBitmap2()) {
 			Bit bitmap2calc = computeBitmap2();
 			if(dados[0] == null || dados[0].getValor() == null) {
-				System.out.println("Bitmap 2 calculado [" + getReadableString(bitmap2calc) + "], atual NULL");
+				System.err.println("Bitmap 2 calculado [" + getReadableString(bitmap2calc) + "], atual NULL");
 			}
 			if(Arrays.compare(bitmap2calc.getValor(), dados[0].getValor()) != 0) {
-				System.out.println("Bitmap 2 diferente: calculado [" + getReadableString(bitmap2calc) + "], atual [" + getReadableString(dados[0]) + "]");
+				System.err.println("Bitmap 2 diferente: calculado [" + getReadableString(bitmap2calc) + "], atual [" + getReadableString(dados[0]) + "]");
 			}
 		}
 		

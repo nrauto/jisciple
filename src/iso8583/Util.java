@@ -98,10 +98,10 @@ public class Util {
 			if (bitmapBinary.charAt(i) == '1') {
 				bits[j] = i;
 				j++;
-				System.out.print((i+1) + " ");
+				//System.out.print((i+1) + " ");
 			}
 		}
-		System.out.println();
+		//System.out.println();
 		return bits;
 
 	}

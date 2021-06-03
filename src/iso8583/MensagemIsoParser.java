@@ -17,43 +17,45 @@ public class MensagemIsoParser {
 		msg.setSizeHeader(sizeHeaderConfig);
 		
 		int numBytesLidos = 0;
-		
-		byte[] tcpHeader = Arrays.copyOfRange(input, numBytesLidos, numBytesLidos + sizeHeaderConfig.getTamanho());
-		
-		int tcpLength;
+
+		// tamanho no cabeçalho tcp pra debug
+		//byte[] tcpHeader = Arrays.copyOfRange(input, numBytesLidos, numBytesLidos + sizeHeaderConfig.getTamanho());
 		
 		numBytesLidos += sizeHeaderConfig.getTamanho();
 		input = Arrays.copyOfRange(input, numBytesLidos, input.length);
-		if(sizeHeaderConfig.getTipo().equalsIgnoreCase("BINARIO")) {
-			byte[] hl;
-			if(sizeHeaderConfig.getFormato().equalsIgnoreCase("HL")) {
-				hl = new byte[] {tcpHeader[0], tcpHeader[1]};
-			} else { // LH
-				hl = new byte[] {tcpHeader[1], tcpHeader[0]};
-			}
-			tcpLength = Integer.parseInt(new String(Util.bytesToAscii(hl)), 16);
-		} else {
-			tcpLength = Integer.parseInt(new String(tcpHeader)); // TODO
-		}
-		System.out.println("tcp length: " + tcpLength);
+
+		// imprime o tamanho no cabeçalho tcp pra debug
+//		int tcpLength;
+//		if(sizeHeaderConfig.getTipo().equalsIgnoreCase("BINARIO")) {
+//			byte[] hl;
+//			if(sizeHeaderConfig.getFormato().equalsIgnoreCase("HL")) {
+//				hl = new byte[] {tcpHeader[0], tcpHeader[1]};
+//			} else { // LH
+//				hl = new byte[] {tcpHeader[1], tcpHeader[0]};
+//			}
+//			tcpLength = Integer.parseInt(new String(Util.bytesToAscii(hl)), 16);
+//		} else {
+//			tcpLength = Integer.parseInt(new String(tcpHeader)); // TODO
+//		}
+		//System.out.println("tcp length: " + tcpLength);
 		
 		// Header
 		Bit header = new Bit(config.getHeaderRxConfig());
 		numBytesLidos = parseBit(input, header);
 		input = Arrays.copyOfRange(input, numBytesLidos, input.length);
-		System.out.println("header: " + header + ", index = " + numBytesLidos);
+		//System.out.println("header: " + header + ", index = " + numBytesLidos);
 		
 		// MTI
 		Bit mti = new Bit(config.getMtiConfig());
 		numBytesLidos = parseBit(input, mti);
 		input = Arrays.copyOfRange(input, numBytesLidos, input.length);
-		System.out.println("mti: " + mti + ", index = " + numBytesLidos);
+		//System.out.println("mti: " + mti + ", index = " + numBytesLidos);
 		
 		// Bitmap 1 e 2
 		Bit bitmap1 = new Bit(config.getBitmapConfig());
 		numBytesLidos = parseBit(input, bitmap1);
 		input = Arrays.copyOfRange(input, numBytesLidos, input.length);
-		System.out.println("bitmap1: " + bitmap1 + ", index = " + numBytesLidos);
+		//System.out.println("bitmap1: " + bitmap1 + ", index = " + numBytesLidos);
 		
 		byte[] bitmapCompleto;
 		
