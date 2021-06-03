@@ -12,7 +12,7 @@ public class MensagemIsoConfig {
 	protected BitConfig footerRxConfig;
 	protected BitConfig bitmapConfig;
 	protected int[] bitsSensiveis;
-	
+
 	protected BitConfig[] bitConfig = new BitConfig[128];
-	
+
 }

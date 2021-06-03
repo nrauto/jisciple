@@ -8,20 +8,18 @@ import jisciple.iso8583.enumeration.TipoFormatoEnum;
 import jisciple.iso8583.enumeration.TipoTamanhoEnum;
 import jisciple.iso8583.util.Util;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
 @Getter
 @Setter
 public class Bit extends BitConfig {
 
 	private static final long serialVersionUID = 1L;
 
-	private byte[] valor; 
+	private byte[] valor;
 
 	public byte[] toIsoBytes() {
-		if(valor == null) {
+		if (valor == null) {
 			return null;
 		}
 		if (tipoTamanho == TipoTamanhoEnum.FIXO) {
@@ -54,17 +52,17 @@ public class Bit extends BitConfig {
 		this.tipoFormato = config.getTipoFormato();
 		this.tipoTamanho = config.getTipoTamanho();
 	}
-	
+
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		if(valor == null) {
+		if (valor == null) {
 			return null;
 		}
 		sb.append(new String(valor));
 		sb.append(", 0x");
 		sb.append(new String(Util.bytesToAscii(valor)));
-		
+
 		sb.append(", config = [TAM ");
 		sb.append(getTamanho());
 		sb.append(", ");
@@ -80,7 +78,7 @@ public class Bit extends BitConfig {
 	}
 
 	public boolean useBitmap2() {
-		if(this.getTipoFormato() == TipoFormatoEnum.ASCII) {
+		if (this.getTipoFormato() == TipoFormatoEnum.ASCII) {
 			return ((Util.asciiToBytes(this.getValor())[0] & 0x80) != 0);
 		} else {
 			return ((this.getValor()[0] & 0x80) != 0);

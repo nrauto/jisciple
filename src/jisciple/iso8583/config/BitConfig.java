@@ -18,5 +18,5 @@ public class BitConfig implements Serializable {
 	protected TipoFormatoEnum tipoFormato;
 	protected TipoDadoEnum tipoDado;
 	protected int tamanho;
-	
+
 }

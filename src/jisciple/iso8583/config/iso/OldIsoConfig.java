@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Data
 public class OldIsoConfig implements Serializable {
-	
+
 	private static final long serialVersionUID = 1L;
 	private String mti;
 	private String mapaBits;
@@ -20,5 +20,5 @@ public class OldIsoConfig implements Serializable {
 	private Integer footerRx;
 	private List<Integer> bitsSensiveis;
 	private Map<String, OldBitConfig> bits;
-	
+
 }

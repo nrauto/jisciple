@@ -98,17 +98,17 @@ public class Util {
 			if (bitmapBinary.charAt(i) == '1') {
 				bits[j] = i;
 				j++;
-				//System.out.print((i+1) + " ");
+				// System.out.print((i+1) + " ");
 			}
 		}
-		//System.out.println();
+		// System.out.println();
 		return bits;
 
 	}
-	
+
 	public static String toPrintableString(byte[] bytes) {
-		
-		if(bytes == null || bytes.length == 0) {
+
+		if (bytes == null || bytes.length == 0) {
 			return "";
 		}
 		// TODO tratar bits sensiveis
@@ -124,21 +124,20 @@ public class Util {
 		return Pattern.compile("[-|_]([a-z])").matcher(snakeCase).replaceAll(m -> m.group(1).toUpperCase());
 	}
 
-	
 	public static String toPrintableDump(byte[] bytes) {
-		if(bytes == null || bytes.length == 0) {
+		if (bytes == null || bytes.length == 0) {
 			return "";
 		}
 		StringBuilder sb = new StringBuilder();
-		
+
 		int offset;
-		for(offset = 0; offset < bytes.length - 16; offset += 16) {
-			for(int i = 0; i < 16; i++) {
+		for (offset = 0; offset < bytes.length - 16; offset += 16) {
+			for (int i = 0; i < 16; i++) {
 				sb.append(String.format("%02X ", bytes[offset + i]));
 			}
-			sb.append(" ");			
-			for(int i = 0; i < 16; i++) {
-				if(bytes[offset + i] < 0x20 || bytes[offset + i] > 0x7E) {
+			sb.append(" ");
+			for (int i = 0; i < 16; i++) {
+				if (bytes[offset + i] < 0x20 || bytes[offset + i] > 0x7E) {
 					sb.append('.');
 				} else {
 					sb.append((char) bytes[offset + i]);
@@ -146,33 +145,24 @@ public class Util {
 			}
 			sb.append("\n");
 		}
-		
+
 		// ultima linha
-		if(bytes.length % 16 != 0) {
+		if (bytes.length % 16 != 0) {
 			StringBuilder partial = new StringBuilder();
-			for(int i = offset; i < bytes.length; i++) {
+			for (int i = offset; i < bytes.length; i++) {
 				partial.append(String.format("%02X ", bytes[i]));
 			}
 			sb.append(String.format("%-48s  ", partial.toString()));
-			for(int i = offset; i < bytes.length; i++) {
-				if(bytes[i] < 0x20 || bytes[i] > 0x7E) {
+			for (int i = offset; i < bytes.length; i++) {
+				if (bytes[i] < 0x20 || bytes[i] > 0x7E) {
 					sb.append('.');
 				} else {
 					sb.append((char) bytes[i]);
 				}
 			}
 		}
-		
-		
+
 		return sb.toString();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

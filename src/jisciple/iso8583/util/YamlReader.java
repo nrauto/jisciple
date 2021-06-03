@@ -25,7 +25,7 @@ public class YamlReader {
 		Yaml y = new Yaml(c);
 		FileInputStream fis = new FileInputStream(filename);
 		return y.load(fis);
-		
+
 	}
-	
+
 }
