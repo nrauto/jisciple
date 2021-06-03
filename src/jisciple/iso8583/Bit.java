@@ -1,4 +1,4 @@
-package jisciple;
+package jisciple.iso8583;
 
 import java.util.Arrays;
 

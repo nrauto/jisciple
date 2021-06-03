@@ -1,4 +1,4 @@
-package jisciple;
+package jisciple.iso8583;
 
 import java.nio.ByteBuffer;
 import java.util.Arrays;
