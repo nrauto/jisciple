@@ -107,6 +107,11 @@ public class Util {
 	}
 	
 	public static String toPrintableString(byte[] bytes) {
+		
+		if(bytes == null || bytes.length == 0) {
+			return "";
+		}
+		// TODO tratar bits sensiveis
 		StringBuilder sb = new StringBuilder();
 
 		for (int i = 0; i < bytes.length; i++) {
@@ -118,16 +123,56 @@ public class Util {
 	public static String toCamelCase(String snakeCase) {
 		return Pattern.compile("[-|_]([a-z])").matcher(snakeCase).replaceAll(m -> m.group(1).toUpperCase());
 	}
-//
-//	public static void main(String[] args) {
-//		byte[] test = new byte[] {0x0B, 0x2F};
-//		
-//		byte[] out = bytesToAscii(test);
-//		
-//		for(int i = 0; i < out.length; i++) {
-//			System.out.print(String.format("%02X ", out[i]));
-//		}
-//		
-//	}
-//	
+
+	
+	public static String toPrintableDump(byte[] bytes) {
+		if(bytes == null || bytes.length == 0) {
+			return "";
+		}
+		StringBuilder sb = new StringBuilder();
+		
+		int offset;
+		for(offset = 0; offset < bytes.length - 16; offset += 16) {
+			for(int i = 0; i < 16; i++) {
+				sb.append(String.format("%02X ", bytes[offset + i]));
+			}
+			sb.append(" ");			
+			for(int i = 0; i < 16; i++) {
+				if(bytes[offset + i] < 0x20 || bytes[offset + i] > 0x7E) {
+					sb.append('.');
+				} else {
+					sb.append((char) bytes[offset + i]);
+				}
+			}
+			sb.append("\n");
+		}
+		
+		// ultima linha
+		if(bytes.length % 16 != 0) {
+			StringBuilder partial = new StringBuilder();
+			for(int i = offset; i < bytes.length; i++) {
+				partial.append(String.format("%02X ", bytes[i]));
+			}
+			sb.append(String.format("%-48s  ", partial.toString()));
+			for(int i = offset; i < bytes.length; i++) {
+				if(bytes[i] < 0x20 || bytes[i] > 0x7E) {
+					sb.append('.');
+				} else {
+					sb.append((char) bytes[i]);
+				}
+			}
+		}
+		
+		
+		return sb.toString();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

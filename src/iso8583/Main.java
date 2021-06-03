@@ -43,6 +43,8 @@ public class Main {
 			
 			msg.check();
 			
+			System.out.println(Util.toPrintableDump(msg.toByteArray()));
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

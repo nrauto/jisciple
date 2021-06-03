@@ -168,6 +168,7 @@ public class MensagemIso {
 				System.err.println("Bitmap 2 diferente: calculado [" + getReadableString(bitmap2calc) + "], atual [" + getReadableString(dados[0]) + "]");
 			}
 		}
+		// TODO validar formato dos dados
 		
 		
 	}
