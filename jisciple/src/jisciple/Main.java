@@ -45,7 +45,8 @@ public class Main {
 
 			RebatedorServer server = new RebatedorServer(isoConfig, headerConfig, PORT); // cria numa thread separada
 			server.start();
-
+			
+			int i = 0;
 			TimerTask t = new TimerTask() {
 				@Override
 				public void run() {

@@ -4,12 +4,17 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
+import java.util.Arrays;
 
+import jisciple.iso8583.Bit;
 import jisciple.iso8583.MensagemIso;
 import jisciple.iso8583.MensagemIsoParser;
 import jisciple.iso8583.builder.MensagemIsoBuilder;
+import jisciple.iso8583.config.BitConfig;
 import jisciple.iso8583.config.MensagemIsoConfig;
 import jisciple.iso8583.config.sizeheader.SizeHeaderConfig;
+import jisciple.iso8583.enumeration.TipoContagemEnum;
+import jisciple.iso8583.enumeration.TipoFormatoEnum;
 import jisciple.iso8583.util.Util;
 import lombok.AllArgsConstructor;
 
@@ -37,6 +42,7 @@ public class RebatedorThread extends Thread {
 
 		byte[] data;
 
+		MensagemIsoBuilder mensagemIsoBuilder = new MensagemIsoBuilder();
 		while (true) {
 			try {
 
@@ -57,8 +63,8 @@ public class RebatedorThread extends Thread {
 					msgRecebida.check();
 
 					System.out.println();
-					
-					MensagemIso mensagemRebatida = MensagemIsoBuilder.buildMensagemRebatida(msgRecebida, isoConfig);
+
+					MensagemIso mensagemRebatida = mensagemIsoBuilder.buildMensagemRebatida(msgRecebida, isoConfig);
 					
 					byte[] saida = mensagemRebatida.toByteArray();
 
